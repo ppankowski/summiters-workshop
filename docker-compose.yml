@@ -93,7 +93,7 @@ services:
       - ./client:/usr/src/client:rw,cached
       - /usr/src/client/node_modules
     ports:
-      - "80:3000"
+      - "82:3000"
 
   admin:
     # Use a static website hosting service in production
@@ -120,8 +120,8 @@ services:
       - cache-proxy
       - mercure
     ports:
-      - "443:443"
-      - "444:444"
+      - "1443:443"
+      - "1444:444"
       - "8443:8443"
       - "8444:8444"
 
